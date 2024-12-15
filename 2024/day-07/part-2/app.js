@@ -58,7 +58,7 @@ function getCombinations(n, matrix){
 	let operators = ['*', '+', '\|']; //used | instead of ||, weird javascript behavior
 
 	let combinations = [];
-	for ( let operator of operators ) {  //use previous then replicate 2x for each operator
+	for ( let operator of operators ) {  //use previous then replicate for each operator
 		for ( let i = 0; i < previous.length; i++){
 			combinations.push( [...previous[i], operator ] );
 		}
